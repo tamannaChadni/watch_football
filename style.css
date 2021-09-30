@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* background-color: #fff; */
+    font-family:'Inter', sans-serif;
+}
+
+section{
+    margin-bottom: 100px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 61, 226);
+    
+
+
+}
+
+
+ .header h1{
+     color:cornsilk;
+     font-weight: 900;
+     padding-top: 80px;
+     padding-left: 40px;
+     font-size:  xxx-large;
+     
+}  
+
+.header a{
+    text-decoration: none;
+}
+ .header img{
+    padding-top: 80px;
+    width: 65%;
+    padding-left: 25%
+    
+
+ } 
+ .header img:hover{
+    transition: all 0.3s ease-in;
+    transform: scale(1.05);
+ }
+ button{
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 30px;
+    background: #E02C6D;
+    font-weight: 500;
+    font-size: 16px;
+    color: cornsilk;
+    transition: all 0.3s ease-in;
+
+ }
+ button i{
+     color: cornsilk;
+     margin: 5px;
+ }
+ button:hover{
+     color: coral;
+     transform: scale(1.05);
+     
+ } 
+ .players{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 30px;
+     margin: auto;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+ #player{
+     padding: 80px,50px ;
+    box-shadow: 2px 2px 2px gainsboro;
+ }
+ #player img{
+    
+     width: 80%;
+     height: 60%;
+     padding-left: 10%;
+
+ }
+ #player h1{
+     text-align: center;
+ }
+ .middle{
+     display: flex;
+     justify-content: space-between;
+ }
+ .stick{
+     padding-left: 20px;
+ }
+ .stick h1{
+    color:rgb(48, 40, 9);
+    font-weight: 900;
+    padding-top: 80px;
+    padding-left: 40px;
+    font-size:  xxx-large;
+     
+ }
+ .stick img{
+    padding-top: 80px;
+    width: 65%;
+    padding-left: 25%
+ }
+ .stick h4{
+     text-align: center;
+     
+ }
+#logo{
+    align-items: center;
+    padding-left: 20%;
+    transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    
+}
+#social_icon{
+    align-items: center;
+    padding-left: 40%;
+    margin-top: -50px;
+    transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+   
+    
+}
+#copyright{
+    text-align: center;
+}
+@media only screen and (max-width: 668px){
+    .container{
+        width: 150%;
+        flex-direction: column;
+    }
+    .header img{
+
+        width: 80%;
+
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+        padding-left: 25%;
+    }
+    .middle{
+        width: 150%;
+        flex-direction: column;
+
+    }
+    .stick img{
+        width: -50%;
+        padding-right: 100%;
+    }
+    #logo{
+        
+    
+    }
+    #social_icon{
+        padding-left: 20%;
+        
+    }
+}
